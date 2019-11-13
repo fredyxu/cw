@@ -40,7 +40,7 @@ PubSubClient client(esp_client);
 // 滴的最长时长，单位毫秒
 int u_time = 150;
 // 防止抖动的忽略时间，少于这个时间的按压会忽略。单位：毫秒
-int check_time = 30;
+int shake_time = 30;
 // 播放电码的单位时长
 int play_u_time = 120;
 // 莫尔斯码
@@ -260,7 +260,7 @@ void run_comm(String comm) {
 	}
 	// 设置防抖时长
 	else if(comm.substring(0, 15) == "set_shake_time_") {
-		play_u_time = comm.substring(15, comm.length()).toInt();
+		shake = comm.substring(15, comm.length()).toInt();
 		Serial.println("设置成功 - 防抖时长: " + comm.substring(15, comm.length()) + "毫秒");
 	}
 }
@@ -385,7 +385,7 @@ void check_key_release() {
 		e_time = millis();
 		unsigned long diff_time = e_time - s_time;
 
-		if (diff_time > check_time) {
+		if (diff_time > shake_time) {
 			if(diff_time < u_time) {
 				key_code += ".";
 				Serial.print(".");
