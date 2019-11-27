@@ -65,7 +65,7 @@ U8g2_for_Adafruit_GFX.h
 EEPROM.h
 
 
-## 关font.h
+## 关于font.h
 font.h为自定义的字体文件，使用的是 文泉驿开源字体( http://wenq.org/wqy2/index.cgi?FontGuide )。
 
 感谢字体作者的无私奉献。
