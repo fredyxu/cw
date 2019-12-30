@@ -28,11 +28,11 @@
 #include "auto_key_check.h"
 
 // 呼号
-String callsign = "BG7YXY";
+String callsign = "ZClub";
 // 路由器SSID
-const char *ssid = "BiliGo";
+const char *ssid = "***";
 // 路由器密码
-const char *password = "08980898";
+const char *password = "***";
 // MQTT服务器
 const char *mqtt_server = "cw.funner.pub";
 // MQTT服务器端口
