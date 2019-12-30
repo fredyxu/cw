@@ -1,5 +1,7 @@
 # 使用Arduino在ESP8266上实现的CW练习器项目
 
+#cw.ino, cw_mqtt.ino, cw_serial.ino使用如下的接线方式，其他版本请按照各自文件夹下的Readme的说明接线。
+
 ### 引脚接线
 
 - LCD显示器
