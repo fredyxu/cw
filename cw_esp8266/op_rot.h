@@ -152,13 +152,13 @@ void rot_do(String item)
 			{
 				u_time += 10;
 			}
-			else if (item == "min" && u_time > 50)
+			else if (item == "min" && u_time > 70)
 			{
 				u_time -= 10;
 			}
-			else if (item == "min" && u_time <= 50)
+			else if (item == "min" && u_time <= 70)
 			{
-				u_time = 50;
+				u_time = 70;
 			}
 		}
 		// 播放时长
